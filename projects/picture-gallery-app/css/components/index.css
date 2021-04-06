@@ -1,0 +1,46 @@
+/* line 1, ../../Treehouse/techdegree-project-5/scss/components/_search-field.scss */
+input {
+  display: flex;
+  height: 40px;
+  border-radius: 5px;
+  border: solid lightgray 2px;
+  font-size: 0.8em;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 75%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding-left: 6px;
+  margin: auto;
+}
+
+/* line 1, ../../Treehouse/techdegree-project-5/scss/components/_images.scss */
+img {
+  box-shadow: 3px 3px 3px gray;
+}
+
+/* line 1, ../../Treehouse/techdegree-project-5/scss/components/_grid.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 5, ../../Treehouse/techdegree-project-5/scss/components/_grid.scss */
+.searchbox {
+  display: grid;
+  border: none;
+  padding: 30px 0px 25px 0px;
+  grid-template-columns: .9fr 1.5fr .9fr;
+  justify-items: center;
+}
+
+/* line 13, ../../Treehouse/techdegree-project-5/scss/components/_grid.scss */
+.gallery {
+  display: grid;
+  width: 60%;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px 20px;
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=index.css.map */

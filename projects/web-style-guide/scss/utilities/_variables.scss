@@ -1,0 +1,23 @@
+/* ============================================= */
+/*              Variables                      */
+/* ============================================= */
+
+//  Colors
+
+$color-primary: #58e1c1;
+$color-secondary: #51ddfc;
+$color-accent1: #e4757a;
+$color-accent2: #927bc1;
+$color-accent3: #fd7856;
+
+//  Colors - Light
+
+$color-default-light: lighten($color-secondary, 15%);
+$color-error-light: lighten($color-accent1, 15%);
+$color-info-light: lighten($color-accent2, 15%); 
+$color-success-light: lighten(#63cc82, 15%); 
+$color-warning-light: lighten($color-accent3, 15%);  
+ 
+
+//  Media query breakpoints
+$mq-large: 768px;

@@ -1,0 +1,239 @@
+/* ============================================= */
+/*              Variables                      */
+/* ============================================= */
+/* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ============================================= */
+/*              Typography                       */
+/* ============================================= */
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+  width: 300px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+#backward,
+#forward {
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#forward {
+  margin-left: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#backward:hover {
+  color: #b3101b;
+}
+
+#forward:hover {
+  color: #26a813;
+}
+
+body {
+  position: relative;
+  background-color: #f0eded;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+  color: #525151;
+  text-transform: uppercase;
+}
+
+.card > .text-container {
+  min-width: 45%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(12, 1fr [col-start]);
+  grid-template-areas: "main";
+  justify-items: center;
+}
+
+main {
+  grid-area: main;
+}
+
+.card {
+  display: flex;
+  background-color: #faf7f7;
+  border: 2px solid #d9d7d7;
+  border-radius: .6rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.card img {
+  border-radius: 50%;
+  padding: 1rem;
+  min-width: 140px;
+}
+
+.name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.email {
+  color: #aba9a9;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+  word-wrap: break-word;
+}
+
+.address {
+  color: #aba9a9;
+  margin-top: .5rem;
+}
+
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+/****************************************************/
+/*********        Tablet 768-1023px        **********/
+/****************************************************/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr [col-start]);
+    grid-template-areas: "main main";
+    grid-column-gap: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  main {
+    grid-area: main;
+  }
+  h1 {
+    padding-left: 2.8rem;
+    margin-bottom: 0;
+    padding-bottom: .5rem;
+  }
+  .modal {
+    width: 376px;
+  }
+  .searchbox {
+    margin-left: auto;
+    margin-right: 1.8rem;
+  }
+  .card {
+    min-width: 35%;
+  }
+  .card > .text-container {
+    min-width: 30%;
+  }
+}
+
+/****************************************************/
+/*********      Desktop 1024px - Larger    **********/
+/****************************************************/
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr [col-start]);
+    grid-template-areas: "main main main";
+    grid-row-gap: 2rem;
+    grid-column-gap: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  main {
+    grid-area: main;
+  }
+  h1 {
+    padding-top: 2rem;
+    padding-left: 2.8rem;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+  }
+  .searchbox {
+    margin-left: auto;
+    margin-right: 1.4rem;
+  }
+  .card {
+    margin-bottom: 0;
+    min-width: 35%;
+  }
+  .modal {
+    width: 376px;
+  }
+  .card > .text-container {
+    min-width: 30%;
+  }
+}
+
+.searchbox {
+  margin-left: auto;
+  padding-right: 1rem;
+}
+
+#search {
+  border-radius: .3rem;
+  border: 2px solid #aba9a9;
+  width: 20rem;
+  outline: none;
+  transition: border .5s;
+}
+
+#search:focus {
+  border: 2px solid #1e5bf7;
+}
+/*# sourceMappingURL=styles.css.map */

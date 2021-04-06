@@ -1,0 +1,70 @@
+//=============================================
+//  Main Section of Works Page
+//=============================================
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 60%;
+    border: 2px solid #787777;
+    margin-bottom: 3rem;
+    color: $color-cardFont;
+    border-radius: .5rem;
+}
+  
+.card img {
+  width: 100%;
+}
+
+.works-title {
+  margin-top: 1rem;
+  padding-top: 4rem;
+}
+
+.container {
+  background-color: $color-container;
+
+}
+
+.container > p {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.container > h4 {
+  padding-left: .5rem;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.icon-box .css-icon {
+  height: 100px;
+  width: 60px;
+}
+
+.icon-box .html-icon {
+  height: 110px;
+  width: 80px;
+}
+
+.icon-box .sass-icon {
+  height: 70px;
+  width: 70px;
+}
+
+.icon-box .js-icon {
+  height: 60px;
+  width: 60px;
+}
+
+.icon-box .js-chart-icon {
+  height: 75px;
+  width: 75px;
+}

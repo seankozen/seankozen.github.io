@@ -1,0 +1,43 @@
+header > div {
+    position: relative;
+}
+
+#notifications {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: lightgreen;
+}
+
+.bell-icon object {
+    pointer-events: none;   
+}
+
+.bell-icon:hover {
+    cursor: pointer;
+    animation-name: rotate-bell;
+    animation-timing-function: linear;
+    animation-duration: .2s;
+    animation-iteration-count: 3;
+    animation-delay: .2s;
+}
+
+@keyframes rotate-bell {
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(-20deg)}
+    50%  {transform: rotate(20deg)}
+    75%  {transform: rotate(-20deg)}
+    100% {transform: rotate(20deg)}
+}
+
+
+
+
+
+
+
+
+

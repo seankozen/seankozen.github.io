@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "index.css",
+	"sources": [
+		"../../scss/components/index.scss",
+		"../../scss/components/_search-field.scss",
+		"../../scss/components/_images.scss",
+		"../../scss/components/_grid.scss"
+	],
+	"sourcesContent": [
+		"//=============================================\r\n//  Components Imports\r\n//=============================================\r\n\r\n  @import 'search-field';\r\n  @import 'images';\r\n  @import 'grid';\r\n        ",
+		"input {\r\n    display: flex;\r\n    height: 40px;\r\n    border-radius: 5px;\r\n    border: solid lightgray 2px;\r\n    font-size: 0.8em;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    width: 75%;\r\n    grid-column-start: 2;\r\n    grid-column-end: 3;\r\n    padding-left: 6px;\r\n    margin: auto;\r\n}",
+		"img {\r\n    box-shadow: 3px 3px 3px gray;\r\n}",
+		"* {\r\n    box-sizing: border-box;\r\n}\r\n\r\n.searchbox {\r\n    display: grid;\r\n    border: none;\r\n    padding: 30px 0px 25px 0px;\r\n    grid-template-columns: .9fr 1.5fr .9fr;\r\n    justify-items: center;\r\n}\r\n\r\n.gallery {\r\n    display: grid;\r\n    width: 60%;\r\n    margin: auto;\r\n    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\r\n    grid-gap: 20px 20px;\r\n    justify-items: center;\r\n    margin-bottom: 50px;\r\n}"
+	],
+	"names": [],
+	"mappings": ";ACAA,AAAA,KAAK,CAAC;EACF,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,mBAAmB;EAC3B,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,4BAA4B;EACzC,KAAK,EAAE,GAAG;EACV,iBAAiB,EAAE,CAAC;EACpB,eAAe,EAAE,CAAC;EAClB,YAAY,EAAE,GAAG;EACjB,MAAM,EAAE,IAAI;CACf;;;ACZD,AAAA,GAAG,CAAC;EACA,UAAU,EAAE,gBAAgB;CAC/B;;;ACFD,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;CACzB;;;AAED,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,iBAAiB;EAC1B,qBAAqB,EAAE,eAAe;EACtC,aAAa,EAAE,MAAM;CACxB;;;AAED,AAAA,QAAQ,CAAC;EACL,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;EACZ,qBAAqB,EAAE,oCAAoC;EAC3D,QAAQ,EAAE,SAAS;EACnB,aAAa,EAAE,MAAM;EACrB,aAAa,EAAE,IAAI;CACtB"
+}

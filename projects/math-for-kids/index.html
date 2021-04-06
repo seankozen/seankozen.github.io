@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Math Drills for Kids</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Arithmetic app menu">
+    <link href="css/normalize.css" type = "text/css" rel="stylesheet">
+    <link href="css/style.css" type = "text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+</head>
+
+
+<body class="main-menu-page">
+    <h1 class="title">Math4Kids</h1>
+    <h2 class="menu-dir">Choose what you want to practice.</h2>
+    
+    <form class="menu-page">
+        <div class = drill-options>
+            <label class="drill-options" for="math">Choose your drill:</label>
+            <select name="math" id='operation'>
+                <option value="addition">Addition</option>
+                <option value="subtraction">Subtraction</option>
+                <option value="multiplication">Multiplication</option>
+                <option value="division">Division</option>
+            </select>
+        </div>
+        <div class="number-sel">  
+            <label for="largest-num">Maximum of first number :</label>
+            <input type = "number" name = "largest-num:" id = "largest-num">
+        </div>  
+        <div class="number-sel">  
+            <label for="smallest-num">Maximum of second number:</label>
+            <input type = "number" name = "smallest-num:" id = "smallest-num">
+        </div>  
+        <div class="number-sel">
+            <button id="start-button" type="button" value="text">START</button>
+        </div>
+
+    </form>
+
+</body>
+
+<script src = "javascript/menu.js"></script>
+
+
+</html>

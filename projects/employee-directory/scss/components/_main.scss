@@ -1,0 +1,28 @@
+//=============================================
+//  Main Elements
+//=============================================
+
+body {
+    position: relative;
+    background-color: $color-pgBackground;
+    padding-bottom: 2rem;
+}
+
+h1 {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    color: $color-heading;
+    text-transform: uppercase;
+}
+
+.card > .text-container {
+    min-width: 45%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}

@@ -1,0 +1,65 @@
+.widget-container-full {
+    width: 95vw;
+}
+
+ul {
+    margin-left: auto;
+    text-align: right;
+    padding-left: 0; 
+    margin-right: 0;   
+}
+
+.traffic-header li {
+    list-style-type: none;
+    margin: 0;
+    margin-left: .5rem;
+    display:inline;  
+    font-size: .8rem;
+    padding: .3rem .3rem;
+    border-radius: 1rem; 
+}
+
+.traffic-header li:hover {
+    cursor: pointer;
+} 
+
+li:hover {
+    cursor: pointer;
+}
+ 
+li:focus,
+.active {
+    background-color: lightgreen;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.widget-container-half {
+    width: 95vw;
+}
+
+/******************************/
+/*********** Traffic **********/
+/******************************/
+.traffic {
+    padding-bottom: 2rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+/******************************/
+/************ Daily ***********/
+/******************************/
+.daily {
+    border-top: 2px solid lightgray;
+    margin-bottom: 2rem;
+}
+
+/******************************/
+/******** Mobile Users ********/
+/******************************/
+
+.mobile-users {
+    border-top: 2px solid lightgray;
+
+}

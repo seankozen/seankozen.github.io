@@ -1,0 +1,16 @@
+.searchbox {
+    margin-left: auto;
+    padding-right: 1rem;
+}
+
+#search {
+    border-radius: .3rem;
+    border: 2px solid $color-cardFont;
+    width: 20rem;
+    outline: none;
+    transition: border .5s;
+}
+
+#search:focus {
+    border: 2px solid $color-active;
+}

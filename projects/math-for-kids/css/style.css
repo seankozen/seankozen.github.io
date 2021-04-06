@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+}
+
+/********* Grid **********/
+.container {
+    display: grid;
+    grid-template-rows: 16rem 5rem 12rem 6rem auto auto;
+
+    grid-template-areas: 
+        "header"
+        "problem"
+        "feedback"
+        "answer"
+        "buttons"
+        "reset-exit"
+        ;
+}
+
+.top-header {
+    grid-area: header;
+    padding-bottom: 1rem;
+}
+
+.problem-view {
+    grid-area: problem;
+}
+
+.feedback-box {
+    grid-area: feedback;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.answer-box {
+    grid-area: answer;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.button-box {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-content: center;
+    grid-area: buttons;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset-exit {
+    grid-area: reset-exit;
+}
+
+
+
+/*******  Elements *******/
+
+h1 {
+    font-family: 'Chewy', cursive;
+    color: blueviolet;
+    font-size: 4em;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Chewy', cursive;
+    text-align: center;
+    color:darkgreen;
+    font-size: 50px;
+    display: block;
+    padding-top: .7rem;
+    padding-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    text-align: center;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/******* Components *******/
+/****** Landing Page ******/
+
+.title {
+    margin-top: 30px;    
+}
+
+.main-menu-page {
+    display: flex;
+    flex-direction: column;
+}
+
+div.drill-options {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-page {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    justify-content: center;
+}
+
+label.drill-options {
+    display: inline-block;
+    font-family: 'Chewy', cursive;
+    font-size: 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+}
+
+select {
+    font-family: 'Chewy', cursive;
+    font-size: 2em;
+    min-width: 20%;
+    text-align-last: center;
+    border-radius: 10px;
+    background-color: bisque;
+}
+
+#operation {
+    font-size: 1.5em;;
+}
+
+.number-sel {
+    display: inline-block;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#largest-num,
+#smallest-num {
+    text-align: center;
+    width: 20%;
+    border-radius: 10px;
+    background-color:bisque;
+}
+
+.menu-dir {
+    margin-top: 1.0em;
+    margin-bottom: 1em;
+}
+
+#start-button {
+    display: inline-block;
+    font-size: 1.4em;
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+    background-color:crimson;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+/******* Components *******/
+/******* Drill Pages ******/
+
+button {
+    font-family: 'Chewy', cursive;
+    border-radius: 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 1;
+    border-width: 5px black;
+}
+
+/***** Problem Display ****/
+/******* Drill Pages ******/
+
+#problem-view {
+    /* display: flex; */
+    flex-direction: column;
+    width: auto;
+}
+
+#problemBox {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    font-size: 4rem;
+    width: auto;
+    margin: 0px auto 0px auto;
+    color: black;
+    font-weight: bold;
+    text-justify: center;
+}
+
+#problemBox > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: .2rem;
+    padding-right: .2rem;
+}
+
+/**** Feedback Display ****/
+/******* Drill Pages ******/
+
+#feedback {
+    font-family: 'Chewy', cursive;
+    font-size: 3rem;
+    width: auto;
+    color: green;
+    font-weight: bold;
+    justify-items: center;
+    align-content: center;
+}
+
+#feedback > p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/******* Answer Box *******/
+/******* Drill Pages ******/
+
+ #answer-box {
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1rem;
+} 
+
+.answer-container {
+    width: 50%;
+    margin: 0;
+}
+
+#answer {
+    font-size: 40px;
+    text-align: center;
+    width: 40%;
+    border-radius: 10px;
+    background-color:cornsilk;
+    height: 4rem;
+}
+
+label {
+    font-family: 'Chewy', cursive;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: .5rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+/** Check & Next Buttons **/
+/******* Drill Pages ******/
+
+#checkButton {
+    background-color:darkgreen;
+    font-size: 1.5em;
+    color: #fff;
+    padding: .3rem;
+    min-width: 20%;
+}
+
+#nextButton {
+    background-color:goldenrod;
+    font-size: 1.5em;
+    color: #fff;
+    padding: .3rem;
+    min-width: 20%;
+    margin-left: 1rem;
+}
+
+/** Reset & Exit Buttons **/
+/******* Drill Pages ******/
+
+.reset-exit {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+#resetButton, #exitButton {
+    margin-top: 30px;
+    padding: .5rem 0;
+    min-width: 15%;
+    width: 30%;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+#resetButton {
+    margin-right: 3rem;
+    background-color:mediumpurple;
+}
+
+#exitButton {
+    background-color: red;  
+}
+
+/****** Media Queries *****/
+/******* Drill Pages ******/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        display: grid;
+        grid-template-rows: 14rem 10rem 12rem 6rem 7rem 7rem;
+    }
+
+    #problemBox { 
+        font-size: 6rem;
+    }
+    
+    #answer {
+        font-size: 60px;
+    }
+
+
+    #feedback {
+        font-size: 4rem;
+    }
+
+    #checkButton {
+        min-width: 30%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #nextButton {
+        min-width: 30%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-left: 2rem;
+    }
+
+    #resetButton, #exitButton {
+        min-width: 30%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #resetButton {
+        margin-right: 2rem;
+
+    }
+}
+
+@media (min-width: 1023px) {
+
+    .container {
+        display: grid;
+        grid-template-rows: 11rem 8rem 7rem 6rem 6rem 6rem;
+    }
+
+    #problemBox { 
+        font-size: 7rem;
+    }
+
+    #answer {
+        font-size: 60px;
+    }
+
+    #feedback {
+        font-size: 4rem;
+    }
+
+    #checkButton {
+        min-width: 30%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    #nextButton {
+        min-width: 30%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+
+    #resetButton, #exitButton {
+        min-width: 30%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    #resetButton {
+        margin-right: 2rem;
+    }
+}

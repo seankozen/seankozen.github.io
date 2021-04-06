@@ -1,0 +1,25 @@
+
+//=============================================
+//  Main Section of About Page
+//=============================================
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-bottom: 3rem;
+  }
+  
+  #hashima-sunset {
+    width: 100%;
+  }
+  
+  .about-content::first-letter {
+    font-size: 250%;
+    color: $color-navFont;
+  }
+  
+  .about-title {
+    margin-top: 1rem;
+    padding-top: 4rem;
+  }

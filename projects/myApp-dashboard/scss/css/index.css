@@ -1,0 +1,207 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header h3 {
+    padding-right: .5rem;
+  }
+  .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas: "header header" "navigation main";
+  }
+  .navigation {
+    flex-direction: column;
+    height: 100%;
+    background-color: #4e497a;
+    justify-content: start;
+    justify-items: center;
+  }
+  nav a {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 3rem;
+  }
+  nav a:not(:first-child) {
+    display: block;
+    margin-left: 0;
+  }
+  /************ Charts ***********/
+  .widget-container-full {
+    width: 75vw;
+  }
+  .widget-container-half {
+    width: 75vw;
+  }
+  ul {
+    margin-right: 2rem;
+  }
+  .traffic-header {
+    display: flex;
+  }
+  /********* Section Padding Adjustment ********/
+  .traffic,
+  .daily,
+  .mobile-users,
+  .social-stats,
+  .members,
+  .recent-activity,
+  .message,
+  .settings {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  /********* Members & Activity ********/
+  .member-text,
+  .activity-text {
+    font-size: 1rem;
+    margin: auto auto auto .5rem;
+  }
+  /********** Toggle Switches *********/
+  .switch-ios.switch-light input ~ span {
+    width: 200px;
+  }
+  .switch-light.switch-ios strong {
+    flex-basis: 250px;
+  }
+  .button-save,
+  .button-disabled {
+    width: 12rem;
+  }
+}
+
+.main {
+  display: grid;
+}
+
+@media (min-width: 1024px) {
+  .header h3 {
+    padding-right: .5rem;
+  }
+  .grid-container {
+    grid-template-columns: 60px 1fr;
+    grid-template-areas: "header header" "navigation main";
+  }
+  /********* Navigation ********/
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #4e497a;
+    justify-content: start;
+  }
+  nav a {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 3rem;
+  }
+  nav a:not(:first-child) {
+    display: block;
+    margin-left: 0;
+  }
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+  .main-header-box,
+  .traffic,
+  .social-stats {
+    grid-column: 1 / span 2;
+  }
+  .daily,
+  .members,
+  .message {
+    grid-column: 1 / span 1;
+  }
+  .mobile-users,
+  .recent-activity,
+  .settings {
+    grid-column: 2 / span 1;
+  }
+  /********* Section Padding Adjustment ********/
+  .traffic,
+  .mobile-users {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .social-stats,
+  .members,
+  .recent-activity,
+  .message,
+  .settings {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  /************ Charts ***********/
+  .traffic-header {
+    display: flex;
+  }
+  .widget-container-full {
+    width: 85vw;
+  }
+  .widget-container-half {
+    width: 35vw;
+  }
+  ul {
+    margin-right: 4rem;
+  }
+  .daily {
+    border-right: 2px solid lightgray;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+  }
+  /************ Social Stats ***********/
+  .social-stats {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .social-box {
+    display: flex;
+    flex-direction: row;
+  }
+  .social-container {
+    margin: 1rem;
+    width: 30%;
+  }
+  /************ New Members ***********/
+  .members {
+    border-right: 2px solid lightgray;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .member-text,
+  .activity-text {
+    font-size: 1rem;
+    margin: auto auto auto .5rem;
+  }
+  /********** Recent Activity *********/
+  .recent-activity {
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  /*********** Message User ***********/
+  .message {
+    margin: 0;
+    border-right: 2px solid lightgray;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  /************* Settings *************/
+  .settings {
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  /********** Toggle Switches *********/
+  .switch-ios.switch-light input ~ span {
+    width: 150px;
+  }
+  .switch-light.switch-ios strong {
+    flex-basis: 200px;
+  }
+  .button-save,
+  .button-disabled {
+    width: 12rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
