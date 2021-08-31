@@ -56,10 +56,12 @@ a {
   flex-direction: column;
   width: 95%;
   height: 60%;
-  border: 2px solid #787777;
+  border: 2px solid #a7a7a7;
   margin-bottom: 3rem;
   color: #f0eded;
   border-radius: .5rem;
+  padding-top: .5rem;
+  background-color: #a7a7a7;
 }
 
 .card img {
