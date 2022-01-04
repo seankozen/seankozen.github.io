@@ -119,6 +119,12 @@ a {
   width: 75px;
 }
 
+.icon-box .react-icon {
+  height: 100px;
+  width: 100px;
+}
+
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -273,7 +279,9 @@ a {
   height: 100vh;
   display: grid;
   grid-template-rows: 6% auto 5rem;
-  grid-template-areas: "navigation" "main" "footer";
+  grid-template-areas: "navigation"
+ "main"
+ "footer";
 }
 
 /* ============================================= */
@@ -342,7 +350,9 @@ a {
     height: 100vh;
     display: grid;
     grid-template-rows: 4rem auto 5rem;
-    grid-template-areas: "navigation" "main" "footer";
+    grid-template-areas: "navigation"
+ "main"
+ "footer";
   }
   .hamburger {
     display: none;
@@ -466,7 +476,9 @@ a {
     height: 100vh;
     display: grid;
     grid-template-rows: 4rem auto 5rem;
-    grid-template-areas: "navigation" "main" "footer";
+    grid-template-areas: "navigation"
+ "main"
+ "footer";
   }
   .nav {
     grid-area: navigation;
