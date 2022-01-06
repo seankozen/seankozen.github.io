@@ -124,6 +124,10 @@ a {
   width: 90px;
 }
 
+.icon-box .node-icon {
+  height: 90px;
+  width: 90px;
+}
 
 .about-container {
   display: flex;
