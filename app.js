@@ -6,31 +6,23 @@ const menuIcon = document.querySelector(".menuIcon");
 
 //******* Name Fade ********//
 
-window.onload = setTimeout(function () {document.getElementById("myName").style.opacity = 1;}, 1000);
+const btn = document.getElementById('button');
 
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-//******* Hamburger Menu ********// 
+   btn.value = 'Sending...';
 
-hamburger.addEventListener("click", toggleMenu);
+   const serviceID = 'default_service';
+   const templateID = 'template_x51f4nx';
 
-function toggleMenu() {
-    if (menu.classList.contains("showMenu")) {
-      menu.classList.remove("showMenu");
-      console.log(menu);
-      closeIcon.style.display = "none";
-      menuIcon.style.display = "block";
-    } else {
-      menu.classList.add("showMenu");
-      console.log(menu);
-      closeIcon.style.display = "block";
-      menuIcon.style.display = "none";
-    }
-  }
-
-const menuLinks = document.querySelectorAll(".menuLink");
-
-menuLinks.forEach( 
-    function(menuLink) { 
-      menuLink.addEventListener("click", toggleMenu);
-    }
-  );
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});

@@ -30,14 +30,39 @@
 //  Navigation
 //=============================================
 
-.hamburger {
+.checkbox {
     display: none;
 }
 
-.bar-nav {
+.nav-container .hamburger-lines {
+    display: none;
+}
+
+.nav {
+    display: flex;
+}
+
+.navbar,
+.ham-container,
+.nav-container,
+.menu-items {
     display: flex;
     width: 100%;
     align-items: center;
+}
+
+.ham-container  {
+    margin: 0;
+}
+
+.menu-items {
+    height: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 0;
+    padding: 0;
+    color: $color-navFont;
+    width: 100%;
 }
 
 #myLogo {
@@ -48,35 +73,48 @@
     margin-left: 2rem;
 }
 
-.nav-list {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    align-items: center;
-    justify-content:right;
-    height: 4rem;
-    margin-top: 0;
-    margin-left: auto;
-    margin-bottom: 0;
-    padding-right: 2rem;
+.navbar .nav-container a {
+    font-size: 1.5rem;
 }
 
-.nav-list a {
-    color: $color-navFont;
-    padding-left: 2rem;
+.navbar .menu-items {
+    background-color: black;
+    box-shadow: none;
+    padding-top: 3.5rem;
+    width: 100%;
+    transform: translate(0%);
+    height: 60px;
+    flex-direction: row;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 1rem;
 }
-    
-.menuLink:hover,
-li > .current {
-    color: $color-greeting;
+
+ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+    color: white;
+}
+
+.navbar .nav-container .current{
+    color: white;
   }
 
-/* ============================================= */
-/*              Works Grid                       */
-/* ============================================= */
+// /* ============================================= */
+// /*              Works Grid                       */
+// /* ============================================= */
 
 .works-main {
-    display: grid;
+     display: grid;
     text-align: center;
     margin-left: auto;
     justify-items: center;
@@ -149,6 +187,15 @@ li > .current {
     padding-top: 2rem;
 }
 
+.skills {
+    padding-left: 20%;
+    justify-content: center;
+}
+
+.skill-items {
+    display:block;
+}
+
 /* ============================================= */
 /*              Contact Components               */
 /* ============================================= */
@@ -159,8 +206,16 @@ li > .current {
 }
 
 .contact-container {
-    margin-bottom: 5rem;
+    margin-bottom: 1.5rem;
 }
+
+#self-pic {
+    height: 14rem;
+    width: 14rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
 }
 
 /****************************************************/
@@ -225,14 +280,44 @@ li > .current {
 //  Navigation
 //=============================================
 
-.hamburger {
+.checkbox {
     display: none;
 }
 
-.bar-nav {
+.nav-container .hamburger-lines {
+    display: none;
+}
+
+.nav {
+    display: flex;
+}
+
+.navbar,
+.ham-container,
+.nav-container,
+.menu-items {
     display: flex;
     width: 100%;
     align-items: center;
+}
+
+.ham-container  {
+    margin: 0;
+    max-width: none;
+}
+
+.menu-items {
+    height: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 0;
+    padding: 0;
+    color: $color-navFont;
+    width: 100%;
+}
+
+.logo-mark {
+    display:block;
 }
 
 #myLogo {
@@ -244,31 +329,36 @@ li > .current {
     cursor: pointer;
 }
 
-.nav-list {
-    display: flex;
+.navbar .menu-items {
+    background-color: black;
+    box-shadow: none;
+    padding-top: 3.5rem;
+    width: 100%;
+    transform: translate(0%);
+    height: 60px;
     flex-direction: row;
-    list-style: none;
-    align-items: center;
-    justify-content:right;
-    height: 4rem;
-    margin-top: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+}
+
+.navbar .nav-container a {
+    font-size: 1.5rem;
+}
+
+ul {
+    display: flex;
+    align-items: right;
     margin-left: auto;
     margin-bottom: 0;
-    padding-right: 2rem;
+    padding-right: 3rem;
+
 }
 
-.nav-list a {
-    color: $color-navFont;
-    padding-left: 2rem;
-}
-
-.menuLink:hover {
+.navbar .nav-container .current{
     color: white;
   }
-
-li > .current {
-    color: white;
-}
 
 /* ============================================= */
 /*              Works Grid                      */
@@ -349,13 +439,22 @@ li > .current {
     margin-top: 0;
 }
 
+
+.skills {
+    padding-left: 35%;
+    justify-content: center;
+}
+
+.skill-items {
+    display:block;
+}
+
 /* ============================================= */
 /*              Contact Components               */
 /* ============================================= */
 
 .contact-title {
-    padding-top: 4rem; 
-    padding-bottom: 2rem;
+    padding-top: 2rem; 
     margin-top: 0;
 }
 
@@ -363,6 +462,30 @@ li > .current {
     margin-bottom: 5rem;
     width: 60%;
 }
+
+#self-pic {
+    height: 14rem;
+    width: 14rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.field {
+    display: flex;
+}
+
+
+.field label {
+    display: inline-block;
+    width: 140px;
+    text-align: right; 
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+
+#button {
+    margin-left: 140px;
+}​
 
 /* ============================================= */
 /*              Footer Components                */

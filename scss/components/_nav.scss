@@ -2,77 +2,149 @@
 //       Navigation
 //=============================================
 
-.hamburger {
-    margin-left: auto;
-    margin: .5rem .5rem 0 auto;
-    width: 2.5rem;
-    height: 2.5rem;
-    border: black solid 1px;
-    border-radius: .3rem;
-    background: $color-hamburger;
-    cursor: pointer;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.ham-container {
+  max-width: 1050px;
+  width: 100%;
+  margin: auto;
+}
 
-  .menuIcon {
-    color: black;
-  }
+.navbar {
+  width: 100%;
+  box-shadow: 0 1px 4px $nav-footer-blur;
+}
 
-  .closeIcon {
-      display: none;
-      color: black;
-  }
+.nav-container {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
 
-  .menu {
-    z-index: 10;
-    position: fixed;
-    display:flex;
-    margin: 1rem auto;
-    justify-content: center;
-    text-align: center;
-    top: 0;
-    left: 50%;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 15%;
-    color: white;
-    transform: translateY(-120%);
-    transition: transform 0.8s;
-    list-style: none;
-    padding-left: 0;
+.navbar .menu-items {
+  display: flex;
+}
 
-  }
+.navbar .nav-container li {
+  list-style: none;
+}
 
-  .nav-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
+.navbar .nav-container a {
+  text-decoration: none;
+  color: $color-navFont;
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding: 0.7rem;
+}
 
-  .menu .nav-wrapper {
-    position:relative; 
-    left: -50%;
-  }
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu-items {
+  background-color: rgb(149, 155, 161);
+  opacity: 1;
+  z-index: 7;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: white;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 3.5rem;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 3rem;
+}
+
+.logo-mark {
+  display: none;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+
+.navbar .nav-container .current{
+  color: white;
+}
 
 
 
-  .menu a {
-      color: $color-navFont;
-      font-size: 1.2rem;
-      width: 8rem;
-  }
-
-  .menu li {
-      padding-bottom: .1rem;
-  }
-
-  .showMenu {
-    transform: translateY(0);
-  }
-
-  .bar-nav {
-    display:none;
-  }

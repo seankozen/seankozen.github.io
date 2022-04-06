@@ -1,0 +1,21 @@
+/* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+* {
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ============================================= */
+/*              Typography                       */
+/* ============================================= */
+
+/*# sourceMappingURL=index.css.map */

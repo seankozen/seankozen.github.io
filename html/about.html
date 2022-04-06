@@ -11,37 +11,31 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
 </head>
 <body class="about-wrapper">
-    <nav class="nav">
-        <div class="hamburger">
-            <span class="menuIcon material-icons">
-                menu
-            </span> 
-            <span class="closeIcon material-icons">
-                close
-            </span>
-            <div class="menu">
-                <div class="nav-wrapper">
-                    <a class="menuLink" href="../index.html">Home</a>
-                    <a class="menuLink" href="works.html">Works</a>
-                    <a class="menuLink" href="#">About Me</a>
-                    <a class="menuLink" href="contact.html">Contact</a>
+    <nav>
+        <div class="navbar">
+
+            <div class="ham-container nav-container"> 
+                <input class="checkbox" type="checkbox"/>
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
                 </div>
-            </div>
+                <div class="logo-mark">
+                    <a href="../index.html">
+                        <img  id="myLogo" alt="myLogo" src="../images/wUIvlP01.svg" title="Go To Home Screen">
+                    </a>    
+                </div>
+                <div class="menu-items">
+                    <ul>
+                        <li><a class="menuLink" href="../index.html">Home</a></li>
+                        <li><a class="menuLink" href="works.html">Works</a></li>
+                        <li><a class="menuLink current" href="#">About Me</a></li>
+                        <li><a class="menuLink" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>          
         </div>   
-       
-        <div class="bar-nav">
-            <div class="logo-mark">
-                <a href="../index.html">
-                    <img  id="myLogo" alt="myLogo" src="../images/wUIvlP01.svg">
-                </a>    
-            </div>
-            <ul class="nav-list">
-                <li><a class="menuLink" href="../index.html">Home</a></li>
-                <li><a class="menuLink" href="works.html">Works</a></li>
-                <li><a class="menuLink current" href="#">About Me</a></li>
-                <li><a class="menuLink" href="contact.html">Contact</a></li>
-            </ul>
-        </div>  
     </nav>
 
     <main class="about-main">
@@ -49,14 +43,33 @@
         <div class="about-container">
                 <img id="hashima-sunset" alt="hashima sunset" src="../images/hashimaSunset1.JPG" title="Rice field at sunset in Hashima">
             <p class="about-content">Previously a high school physics teacher, English teacher, and human resources manager, 
-                I am now devoting my time to web development.  Using HTML, CSS, and JavaScript, I create web pages and web apps.
-                I am continually adding to my skill set and exploring the use of different technologies in my creations.        
-                <br><br>
-                I am currently residing in Hashima in Gifu Prefecture in Japan, a city of 70,000 straddled by the Nagara and Kiso Rivers.  
+                I am now devoting much of my time as a freelance web developer. I completed the Treehouse Front End Web Development
+                Techdegree in 2021, and the Full Stack JavaScript Techdegree in 2022. Using various technologies, I create web pages and web apps.
+                I am continually adding to my skill set and exploring the use of different technologies in my creations. 
+            </p>
+                <div class="skills">
+                    <h3>Skills:</h3>
+                    <ul class="skill-items">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Sass/Scss</li>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>React.js</li>
+                        <li>Sequelize</li>
+                        <li>SQLite</li>  
+                        <li>Pug</li>
+                        <li>OOP</li>
+                        <li>Business Level Japanese</li>
+                    </ul>
+                </div>
+
+                <p class="about-content">I am currently residing in Hashima in Gifu Prefecture in Japan, a city of 70,000 straddled by the Nagara and Kiso Rivers.  
                 Agriculture predominates the landscape on the outskirts of the city and there are areas that provide refuge for 
                 wild animals like weasels, <em>tanuki</em> (Japanese raccoon dogs), wild boar, and numerous bird species.  
                 Living in Hashima is an everyday source of inspiration and creativity in my work as a web developer.
-            </p>
+                </p>
         </div>
     </main>
 
@@ -71,8 +84,6 @@
             <img  id="linkedin" alt="linkedin" src="../images/linkedin-logo.svg">
         </a>
     </footer>
-    
-    <script src="../app.js"></script>
 
 </body>
 </html>

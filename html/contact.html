@@ -1,76 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-</head>
-<body class="contact-wrapper">
-    <nav class="nav">
-        <div class="hamburger">
-            <span class="menuIcon material-icons">
-                menu
-            </span> 
-            <span class="closeIcon material-icons">
-                close
-            </span>
-            <div class="menu">
-                <div class="nav-wrapper">
-                    <a class="menuLink" href="../index.html">Home</a>
-                    <a class="menuLink" href="works.html">Works</a>
-                    <a class="menuLink" href="about.html">About Me</a>
-                    <a class="menuLink" href="#">Contact</a>
-                </div>
-            </div>
-        </div>   
-
-        <div class="bar-nav">
-            <div class="logo-mark">
-                <a href="../index.html">
-                    <img  id="myLogo" alt="myLogo" src="../images/wUIvlP01.svg">
-                </a>    
-            </div>
-            <ul class="nav-list">
-                <li><a class="menuLink" href="../index.html">Home</a></li>
-                <li><a class="menuLink" href="works.html">Works</a></li>
-                <li><a class="menuLink" href="about.html">About Me</a></li>
-                <li><a class="menuLink current" href="#">Contact</a></li>
+  </head>
+  <body class="contact-wrapper">
+    <nav>
+      <div class="navbar">
+        <div class="ham-container nav-container">
+          <input class="checkbox" type="checkbox" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="logo-mark">
+            <a href="../index.html">
+              <img
+                id="myLogo"
+                alt="myLogo"
+                src="../images/wUIvlP01.svg"
+                title="Go To Home Screen"
+              />
+            </a>
+          </div>
+          <div class="menu-items">
+            <ul>
+              <li><a class="menuLink" href="../index.html">Home</a></li>
+              <li><a class="menuLink" href="works.html">Works</a></li>
+              <li><a class="menuLink" href="about.html">About Me</a></li>
+              <li><a class="menuLink current" href="#">Contact</a></li>
             </ul>
-        </div>  
+          </div>
+        </div>
+      </div>
     </nav>
 
     <main class="contact-main">
-       <h1 class="contact-title">Contact</h1>
-       <div class="contact-container">
-            <div class="pic-container">
-                <img id="self-pic" alt="sean" src="../images/sean-pic.png">
+      <h1 class="contact-title">Contact</h1>
+      <div class="contact-container">
+        <div class="pic-container">
+          <img id="self-pic" alt="sean" src="../images/sean-pic.png" />
+        </div>
+
+        <h3>
+          If you would like to get in touch with me, discuss possible
+          projects, or would like me to build you a website, please send me a message via Facebook or LinkedIn. Or, you can just send
+          me an email.
+        </h3>
+        <div class="form-box">
+          <form id="form">
+            <div class="field">
+              <label for="from_name">Your name:</label>
+              <input type="text" name="from_name" id="from_name" />
+            </div>
+            <div class="field">
+              <label for="to_name">To:</label>
+              <input type="text" name="to_name" id="to_name" value="Sean Kozen"/>
+            </div>
+            <div class="field">
+              <label for="message">Message:</label>
+              <textarea type="text" name="message" id="message" rows="6" placeholder="Your message"></textarea>
+            </div>
+            <div class="field">
+              <label for="reply_to">Your email:</label>
+              <input type="text" name="reply_to" id="reply_to" />
             </div>
 
-            <h3>If you would like to get in touch with me or discuss possible projects, please send me a message via Facebook or LinkedIn.  
-                Or, send me an email at: 
-            </h3>
-            <a id="email-contact" href = "mailto:rikasean@gmail.com?subject=Contact&body=Message">rikasean@gmail.com</a>    
-       </div>
+            <input type="submit" id="button" value="Send Email" />
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
-        <a target="_blank" href="https://www.facebook.com/sgkozen">
-            <img  id="facebook" alt="facebook" src="../images/f_logo_RGB-White_1024.svg">
-        </a>
-        <a target="_blank" href="https://github.com/seankozen">
-            <img  id="github" alt="github" src="../images/gitHubMark.svg.svg">
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/sean-george-kozen-10a8a0207/">
-            <img  id="linkedin" alt="linkedin" src="../images/linkedin-logo.svg">
-        </a>
+      <a target="_blank" href="https://www.facebook.com/sgkozen">
+        <img
+          id="facebook"
+          alt="facebook"
+          src="../images/f_logo_RGB-White_1024.svg"
+        />
+      </a>
+      <a target="_blank" href="https://github.com/seankozen">
+        <img id="github" alt="github" src="../images/gitHubMark.svg.svg" />
+      </a>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/sean-george-kozen-10a8a0207/"
+      >
+        <img id="linkedin" alt="linkedin" src="../images/linkedin-logo.svg" />
+      </a>
     </footer>
-    
-    <script src="../app.js"></script>
 
-</body>
+    <script src="../app.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("oz8yqEnguF5Z5VUgO");
+      })();
+    </script>
+  </body>
 </html>

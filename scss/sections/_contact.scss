@@ -12,19 +12,51 @@
     justify-content: center;
     text-align: center;
   }
-  
-  .contact-title {
-    margin-top: 1rem;
-    padding-top: 4rem;
-  }
 
-  #self-pic {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%;
-    margin-bottom: 2rem;
-  }
+.contact-title {
+  margin-top: 1rem;
+  padding-top: 4rem;
+}
 
-  #email-contact {
-    color: $color-greeting;
-  }
+#self-pic {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+#email-contact {
+  color: $color-greeting;
+}
+
+.form-box {
+  align-items: center;
+  margin: auto;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display:flex;
+  font-size: 0.8rem;
+  color: rgb(223, 220, 220);
+}
+
+.field input,
+.field textarea {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none
+}
