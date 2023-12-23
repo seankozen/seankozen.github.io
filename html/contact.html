@@ -98,8 +98,12 @@
               <label for="reply_to">Your email:</label>
               <input type="text" name="reply_to" id="reply_to" />
             </div>
-
-            <input type="submit" id="button" value="Send Email" />
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+            <button type="submit" id="button" value="Send Email" />
           </form>
         </div>
       </div>
