@@ -3,9 +3,9 @@ const menu = document.querySelector(".menu");
 const closeIcon = document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 
-
 //******* Name Fade ********//
 
+/*
 const btn = document.getElementById('button');
 
 document.getElementById('form')
@@ -26,3 +26,4 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+*/
