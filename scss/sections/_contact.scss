@@ -1,17 +1,16 @@
-
 //=============================================
 //  Main Section of Contact Page
 //=============================================
 
 .contact-container {
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    margin-bottom: 6rem;
-    margin-top: 2rem;
-    justify-content: center;
-    text-align: center;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin-bottom: 6rem;
+  margin-top: 2rem;
+  justify-content: center;
+  text-align: center;
+}
 
 .contact-title {
   margin-top: 1rem;
@@ -39,7 +38,7 @@
 }
 
 .field label {
-  display:flex;
+  display: flex;
   font-size: 0.8rem;
   color: rgb(223, 220, 220);
 }
@@ -52,11 +51,11 @@
   font-size: 14px;
 }
 
-input[type="submit"] {
+button {
   display: block;
   padding: 6px 30px;
   font-size: 14px;
-  background-color: #4460AA;
+  background-color: #4460aa;
   color: #fff;
-  border: none
+  border: none;
 }
