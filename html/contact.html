@@ -56,23 +56,43 @@
         </div>
 
         <h3>
-          If you would like to get in touch with me, discuss possible
-          projects, or would like me to build you a website, please send me a message via Facebook or LinkedIn. Or, you can just send
-          me an email.
+          If you would like to get in touch with me, discuss possible projects,
+          or would like me to build you a website, please send me a message via
+          Facebook or LinkedIn. Or, you can just send me an email.
         </h3>
         <div class="form-box">
-          <form id="form">
+          <form
+            id="form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="99be8dde-6758-4bb2-8754-4798fdc3e3c5"
+            />
             <div class="field">
               <label for="from_name">Your name:</label>
               <input type="text" name="from_name" id="from_name" />
             </div>
             <div class="field">
               <label for="to_name">To:</label>
-              <input type="text" name="to_name" id="to_name" value="Sean Kozen"/>
+              <input
+                type="text"
+                name="to_name"
+                id="to_name"
+                value="Sean Kozen"
+              />
             </div>
             <div class="field">
               <label for="message">Message:</label>
-              <textarea type="text" name="message" id="message" rows="6" placeholder="Your message"></textarea>
+              <textarea
+                type="text"
+                name="message"
+                id="message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
             </div>
             <div class="field">
               <label for="reply_to">Your email:</label>
